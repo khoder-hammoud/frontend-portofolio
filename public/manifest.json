@@ -1,0 +1,25 @@
+{
+  "name": "ARCHITECT_NULL Portfolio",
+  "short_name": "Portfolio",
+  "description": "Full Stack Developer Portfolio - Industrial Cyber-Brutalism",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#00F2FF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/me.png.jpg",
+      "sizes": "1200x1200",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/me.png.jpg",
+      "sizes": "1200x1200",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "technology"]
+}

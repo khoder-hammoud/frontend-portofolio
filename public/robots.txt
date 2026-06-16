@@ -1,0 +1,22 @@
+# robots.txt for ARCHITECT_NULL Portfolio
+
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://yourportfolio.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
