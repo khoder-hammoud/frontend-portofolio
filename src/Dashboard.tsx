@@ -2477,13 +2477,12 @@ const FilesView = ({ onSuccess, onError }: { onSuccess: (msg: string) => void; o
 
   const copyUrl = async (url: string, id: string) => {
     try {
-      const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-      const fullUrl = `${apiBase}${url}`;
+      const fullUrl = url.startsWith('http') ? url : `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}${url}`;
       await navigator.clipboard.writeText(fullUrl);
       setCopiedId(id);
       setTimeout(() => setCopiedId(null), 2000);
-    } catch {
-      onError('Failed to copy URL');
+    } catch (err) {
+      console.error('Failed to copy:', err);
     }
   };
 
